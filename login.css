@@ -1,9 +1,33 @@
 img{
     height: 150px;
-    width: 300px;
+    width: 250px;
 }
 
-div{
+.flex-container{
     background-color: black;
     text-align: center;
+    width: 100%;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+  }
+  .login-div{
+    border: 2px solid black; /* 2px thickness, solid style, black color */
+            padding: 10px; /* Padding inside the border */
+            margin: 10px; /* Margin outside the border */
+            border-collapse: collapse; /* Collapse borders */
+            width: 80%; /* Full width of the container */
+            border-radius: 5px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow content */
+  }
+  .register-div{
+    border: 2px solid black; /* 2px thickness, solid style, black color */
+            padding: 10px; /* Padding inside the border */
+            margin: 10px; /* Margin outside the border */
+            border-collapse: collapse; /* Collapse borders */
+            width: 80%; /* Full width of the container */
+            border-radius: 5px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow content */
+  }
