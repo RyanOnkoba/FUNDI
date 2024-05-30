@@ -1,33 +1,44 @@
-img{
-    height: 150px;
-    width: 250px;
+img {
+  height: 150px;
+  width: 250px;
 }
 
-.flex-container{
-    background-color: black;
-    text-align: center;
-    width: 100%;
+.flex-container {
+  background-color: black;
+  text-align: center;
+  width: 100%;
 }
+
 .grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;
-  }
-  .login-div{
-    border: 2px solid black; /* 2px thickness, solid style, black color */
-            padding: 10px; /* Padding inside the border */
-            margin: 10px; /* Margin outside the border */
-            border-collapse: collapse; /* Collapse borders */
-            width: 80%; /* Full width of the container */
-            border-radius: 5px; /* Rounded corners */
-            overflow: hidden; /* Hide overflow content */
-  }
-  .register-div{
-    border: 2px solid black; /* 2px thickness, solid style, black color */
-            padding: 10px; /* Padding inside the border */
-            margin: 10px; /* Margin outside the border */
-            border-collapse: collapse; /* Collapse borders */
-            width: 80%; /* Full width of the container */
-            border-radius: 5px; /* Rounded corners */
-            overflow: hidden; /* Hide overflow content */
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px auto;
+  border-collapse: collapse;
+  width: 80%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  background-image: url('./1'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the background image */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up the card slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a larger shadow on hover */
+}

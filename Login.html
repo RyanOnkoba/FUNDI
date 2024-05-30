@@ -6,25 +6,40 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css">
 </head>
-<div class = "flex-container">
-    <img src="./LOGO IMAGE" alt = "LOGO">
-</div>
 <body>
-    <div class = "grid-container">
-    <div class ="register-div">
-        <img src="./LOGO IMAGE" alt = "LOGO">
-        <h2>Register</h2>
-        <p>Create an account to become a Fundi</p>
-        <p>Start earning as soon as possible:></p>
-      </div>
-      
-      <div class ="login-div">
-        <img src="./LOGO IMAGE" alt = "LOGO">
-        <h2>Login</h2>
-        <p>Login to your account to view available jobs</p>
-        <p>Login to contact a Fundi</p>
-      </div>
+    <div class="flex-container">
+        <img src="./LOGO IMAGE" alt="LOGO">
     </div>
+    <div class="grid-container">
+        <div class="register-div card">
+            <img src="./LOGO IMAGE" alt="LOGO">
+            <h2>Register</h2>
+            <p>Create an account to become a Fundi</p>
+            <p>Start earning as soon as possible</p>
 
+            <form action="/action_page.php">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" ><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" ><br><br>
+              <input type="submit" value="Submit">
+            </form> 
+            </div>
+      
+        <div class="login-div card">
+            <img src="./1" alt="Background">
+            <h2>Login</h2>
+            <p>Login to your account to view available jobs</p>
+            <p>Login to contact a Fundi</p>
+
+            <form action="/action_page.php">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname"><br><br>
+              <input type="submit" value="Submit">
+            </form> 
+        </div>
+    </div>
 </body>
 </html>
