@@ -26,19 +26,39 @@ img {
   padding: 10px;
   margin: 10px auto;
   border-collapse: collapse;
+  height: 500px;
   width: 80%;
   border-radius: 5px;
   overflow: hidden;
   box-sizing: border-box;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
-  background-image: url('./1'); /* Set the background image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-image 0.3s ease; /* Smooth transition for transform, box-shadow, and background-image */
+  background-image: url('./1.jpg'); /* Default background image */
   background-size: cover; /* Ensure the image covers the entire card */
   background-position: center; /* Center the background image */
+  position: relative; /* Make the card a positioning context for the text */
+}
+
+.card h2, .card p, .card form {
+  opacity: 0; /* Hide the text initially */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  position: absolute; /* Position the text absolutely within the card */
+  top: 50%; /* Center the text vertically */
+  left: 50%; /* Center the text horizontally */
+  transform: translate(-50%, -50%); /* Translate the text to the center */
+  text-align: center; /* Center align the text */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background color to make text readable */
+  padding: 10px; /* Optional: Add padding for better readability */
+  border-radius: 5px; /* Optional: Add border radius for a better look */
 }
 
 .card:hover {
   transform: scale(1.05); /* Scale up the card slightly on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a larger shadow on hover */
+  background-image: url('./2.jpg'); /* Hover background image */
+}
+
+.card:hover h2, .card:hover p, .card:hover form {
+  opacity: 1; /* Show the text on hover */
 }
