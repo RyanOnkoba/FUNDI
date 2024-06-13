@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Page</title>
+    <link rel="icon" href="./LOGO IMAGE">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -13,47 +14,9 @@
     <button class="card-button" onclick="window.location.href='/Home.html'">HomePage</button>
     <div class="register-div card">
         <h2>Welcome to your Professional Dashboard</h2>
-        <p>Log in to manage your projects, connect with clients, and track your progress.</p>
-        <p>Your tools for success are just a click away.</p>
-        <div class="button-container">
-            <button class="card-button" onclick="openModal('fundi')">Log In</button>
-            <button class="card-button" onclick="window.location.href='/signup'">Register</button>
-        </div>
+        <p>Name:</p>
+        <p></p>
     </div>
     <script src="login.js"></script>
-    
-    <!-- Modal structure -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Log In</h2>
-            <form id="loginForm">
-               <p> <label for="email">Email/Phone Number:</label>
-                <input type="email" id="email" name="email" required></p>
-               <p><label for="password">Password:</label>
-                <input type ="password" id="password" name="Password" required></p> 
-                <button type="submit" class="card-button">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="signupModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Log In</h2>
-            <form id="signupForm">
-               <p> <label for="email">Email/Phone Number:</label>
-                <input type="email" id="email" name="email" required></p>
-               <p><label for="password">Password:</label>
-                <input type ="password" id="password" name="Password" required></p> 
-                <button type="submit" class="card-button">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <script src="login.js"></script>
-</body>
-</html>
-
 </body>
 </html>

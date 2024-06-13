@@ -1,17 +1,21 @@
 // login.js
 
-function openModal(type) {
+function openModal(userType) {
     document.getElementById('loginModal').style.display = 'block';
-    document.getElementById('loginForm').action = '/' + type + '/login';
 }
 
 function closeModal() {
     document.getElementById('loginModal').style.display = 'none';
+    document.getElementById('signupModal').style.display = 'none';
 }
 
-// Close the modal if the user clicks outside of it
+function openSignupModal() {
+    document.getElementById('signupModal').style.display = 'block';
+}
+
+// Close the modal when the user clicks outside of it
 window.onclick = function(event) {
-    if (event.target == document.getElementById('loginModal')) {
+    if (event.target.className === 'modal') {
         closeModal();
     }
 }

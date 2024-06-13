@@ -12,26 +12,15 @@ img {
 .register-div {
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: 2px solid black;
     padding: 20px;
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: #d4af37;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    background-size: cover;
-    background-position: center;
-    width: 80vw; /* Adjust width to occupy 80% of the screen */
-    height: 80vh; /* Adjust height to occupy 80% of the screen */
+    width: 80vw; 
+    height: 80vh;
     position: relative;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-image: none;
 }
 
 .card-button {
@@ -46,51 +35,6 @@ img {
 }
 
 .card-button:hover {
-    background-color: black;
+    background-color: white;
     color: #d4af37;
 }
-
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Modal styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  .modal-content {
-    background-color: white;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 400px; /* Maximum width for larger screens */
-    text-align: center;
-    border-radius: 5px;
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  

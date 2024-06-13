@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="icon" href="./LOGO IMAGE">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
             <p>Your tools for success are just a click away.</p>
             <div class="button-container">
                 <button class="card-button" onclick="openModal('fundi')">Log In</button>
-                <button class="card-button" onclick="window.location.href='/Professional.html'">SignUp</button>
+                <button class="card-button" onclick="openSignupModal()">SignUp</button>
             </div>
         </div>
       
@@ -30,35 +31,44 @@
             <p>Your next project starts here.</p>
             <div class="button-container">
                 <button class="card-button" onclick="openModal('client')">Log In</button>
-                <button class="card-button" onclick="window.location.href='/Professional.html'">SignUp</button>
+                <button class="card-button" onclick="openSignupModal()">SignUp</button>
             </div>
         </div>
     </div>
 
-    <!-- Modal structure -->
+    <!-- Modal structure for login -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Log In</h2>
             <form id="loginForm">
-               <p> <label for="email">Email/Phone Number:</label>
+                <p><label for="email">Email/Phone Number:</label>
                 <input type="email" id="email" name="email" required></p>
-               <p><label for="password">Password:</label>
-                <input type ="password" id="password" name="Password" required></p> 
+                <p><label for="password">Password:</label>
+                <input type ="password" id="password" name="password" required></p>
                 <button type="submit" class="card-button">Submit</button>
             </form>
         </div>
     </div>
 
+    <!-- Modal structure for signup -->
     <div id="signupModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Log In</h2>
+            <h2>Sign Up</h2>
             <form id="signupForm">
-               <p><label for="email">Email/Phone Number:</label>
-                <input type="email" id="email" name="email" required></p>
-               <p><label for="password">Password:</label>
-                <input type ="password" id="password" name="Password" required></p> 
+                <p><label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required></p>
+                <p><label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required></p>
+                <p><label for="location">Location:</label>
+                <input type="text" id="location" name="location" required></p>
+                <p><label for="age">Age:</label>
+                <input type="number" id="age" name="age" required></p>
+                <p><label for="idNumber">ID Number:</label>
+                <input type="text" id="idNumber" name="idNumber" required></p>
+                <p><label for="password">Password:</label>
+                <input type ="password" id="password" name="password" required></p>
                 <button type="submit" class="card-button">Submit</button>
             </form>
         </div>
