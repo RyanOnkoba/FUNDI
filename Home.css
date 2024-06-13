@@ -1,4 +1,4 @@
-rfbody {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -28,9 +28,9 @@ rfbody {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 15px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
     text-align: center;
     padding: 20px;
 }
@@ -38,6 +38,8 @@ rfbody {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #333; /* New background color on hover */
+    color: #fff; /* New text color on hover */
 }
 
 .card img {
@@ -70,6 +72,11 @@ rfbody {
     display: block;
 }
 
+.card:hover h3,
+.card:hover .price {
+    color: #fff; /* Ensuring the text in h3 and price also changes color on hover */
+}
+
 .footer {
     font-size: 12px;
     color: #777;
@@ -83,8 +90,8 @@ rfbody {
 }
 
 .LOGOdiv img {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
 }
 
 nav {
@@ -101,12 +108,11 @@ nav a {
     padding: 10px 20px;
     background-color: #000;
     border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
 }
 
-nav a:hover {
-    background-color: #d4af37; /* Gold color */
-    color: #000;
+nav a.circular {
+    border-radius: 50%; /* Circular shape when the class is added */
 }
 
 .button {
@@ -116,10 +122,14 @@ nav a:hover {
     padding: 10px 20px;
     border-radius: 4px;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
 }
 
 .button:hover {
     background-color: #000;
     color: #d4af37; /* Gold color */
+}
+
+.button.circular {
+    border-radius: 50%; /* Circular shape when the class is added */
 }
