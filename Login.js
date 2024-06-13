@@ -1,7 +1,9 @@
-// login.js
-
-function openModal(userType) {
+function openModal(type) {
     document.getElementById('loginModal').style.display = 'block';
+}
+
+function openSignupModal() {
+    document.getElementById('signupModal').style.display = 'block';
 }
 
 function closeModal() {
@@ -9,13 +11,10 @@ function closeModal() {
     document.getElementById('signupModal').style.display = 'none';
 }
 
-function openSignupModal() {
-    document.getElementById('signupModal').style.display = 'block';
+function redirectToProfessional() {
+    window.location.href = './Professional.html';
 }
 
-// Close the modal when the user clicks outside of it
-window.onclick = function(event) {
-    if (event.target.className === 'modal') {
-        closeModal();
-    }
+function redirectToClientDashboard() {
+    window.location.href = './client-dashboard.html';
 }
