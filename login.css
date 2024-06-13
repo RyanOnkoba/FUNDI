@@ -47,12 +47,12 @@ img {
   background-image: none; /* Remove the background image on hover */
 }
 
- .card p, .card .button-container {
+ .card .button-container {
   opacity: 0; /* Hide the text and buttons initially */
   transition: opacity 0.3s ease, color 0.3s ease; /* Smooth transition for opacity and color */
 }
 
-.card:hover h2, .card:hover p, .card:hover .button-container {
+.card:hover h2, .card:hover .button-container {
   opacity: 1; /* Show the text and buttons on hover */
   color: white; /* Change text color to white on hover */
 }
