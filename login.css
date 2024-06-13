@@ -26,39 +26,93 @@ img {
   padding: 10px;
   margin: 10px auto;
   border-collapse: collapse;
-  height: 500px;
   width: 80%;
   border-radius: 5px;
   overflow: hidden;
   box-sizing: border-box;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-image 0.3s ease; /* Smooth transition for transform, box-shadow, and background-image */
-  background-image: url('./1.jpg'); /* Default background image */
+  color:#FF5F1F;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition for transform, box-shadow, background-color, and color */
   background-size: cover; /* Ensure the image covers the entire card */
   background-position: center; /* Center the background image */
-  position: relative; /* Make the card a positioning context for the text */
-}
-
-.card h2, .card p, .card form {
-  opacity: 0; /* Hide the text initially */
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
-  position: absolute; /* Position the text absolutely within the card */
-  top: 50%; /* Center the text vertically */
-  left: 50%; /* Center the text horizontally */
-  transform: translate(-50%, -50%); /* Translate the text to the center */
-  text-align: center; /* Center align the text */
-  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background color to make text readable */
-  padding: 10px; /* Optional: Add padding for better readability */
-  border-radius: 5px; /* Optional: Add border radius for a better look */
+  height: 300px; /* Fixed height to maintain initial size */
+  position: relative; /* Make positioning relative to the card */
 }
 
 .card:hover {
   transform: scale(1.05); /* Scale up the card slightly on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a larger shadow on hover */
-  background-image: url('./2.jpg'); /* Hover background image */
+  background-color: black; /* Change background color to black on hover */
+  background-image: none; /* Remove the background image on hover */
 }
 
-.card:hover h2, .card:hover p, .card:hover form {
-  opacity: 1; /* Show the text on hover */
+ .card p, .card .button-container {
+  opacity: 0; /* Hide the text and buttons initially */
+  transition: opacity 0.3s ease, color 0.3s ease; /* Smooth transition for opacity and color */
 }
+
+.card:hover h2, .card:hover p, .card:hover .button-container {
+  opacity: 1; /* Show the text and buttons on hover */
+  color: white; /* Change text color to white on hover */
+}
+
+.card-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color:#FF5F1F;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: white;
+  color: #FF5F1F;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 400px; /* Maximum width for larger screens */
+  text-align: center;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
