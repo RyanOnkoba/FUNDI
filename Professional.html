@@ -19,7 +19,7 @@
             <p>Your tools for success are just a click away.</p>
             <div class="button-container">
                 <button class="card-button" onclick="openModal('fundi')">Log In</button>
-                <button class="card-button" onclick="window.location.href='/Professional.html'">SignUp</button>
+                <button class="card-button" onclick="window.location.href='/signup'">Register</button>
             </div>
         </div>
       
@@ -29,7 +29,7 @@
             <p>Your next project starts here.</p>
             <div class="button-container">
                 <button class="card-button" onclick="openModal('client')">Log In</button>
-                <button class="card-button" onclick="window.location.href='/Professional.html'">SignUp</button>
+                <button class="card-button" onclick="window.location.href='/signup'">Register</button>
             </div>
         </div>
     </div>
@@ -40,24 +40,8 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Log In</h2>
             <form id="loginForm">
-               <p> <label for="email">Email/Phone Number:</label>
-                <input type="email" id="email" name="email" required></p>
-               <p><label for="password">Password:</label>
-                <input type ="password" id="password" name="Password" required></p> 
-                <button type="submit" class="card-button">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="signupModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Log In</h2>
-            <form id="signupForm">
-               <p> <label for="email">Email/Phone Number:</label>
-                <input type="email" id="email" name="email" required></p>
-               <p><label for="password">Password:</label>
-                <input type ="password" id="password" name="Password" required></p> 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
                 <button type="submit" class="card-button">Submit</button>
             </form>
         </div>
