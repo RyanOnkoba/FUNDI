@@ -4,132 +4,179 @@ body {
     padding: 20px;
     background-color: #f9f9f9;
     color: #333;
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.header {
+  }
+  
+  .header {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.grid {
+  }
+  
+  .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-}
-
-.card {
+  }
+  
+  .card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
     text-align: center;
     padding: 20px;
-}
-
-.card:hover {
+    display: block;
+  }
+  
+  .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: #333; /* New background color on hover */
     color: #fff; /* New text color on hover */
-}
-
-.card img {
+  }
+  
+  .card img {
     width: 100%;
     height: auto;
     max-height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
-}
-
-.card h3 {
+  }
+  
+  .card h3 {
     font-size: 18px;
     margin: 10px 0;
     color: #d4af37; /* Gold color */
-}
-
-.card .price {
+  }
+  
+  .card .price {
     font-size: 16px;
     font-weight: bold;
     color: #d4af37; /* Gold color */
 }
 
 .card .description {
-    display: none;
-    font-size: 14px;
-    margin-top: 10px;
+  display: none;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .card:hover .description {
-    display: block;
+  display: block;
 }
 
 .card:hover h3,
 .card:hover .price {
-    color: #fff; /* Ensuring the text in h3 and price also changes color on hover */
+  color: #fff; /* Ensuring the text in h3 and price also changes color on hover */
 }
 
 .footer {
-    font-size: 12px;
-    color: #777;
-    margin-top: 20px;
-    text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .LOGOdiv {
-    background-color: black;
-    text-align: center;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .LOGOdiv img {
-    width: 250px;
-    height: 200px;
+  width: 250px;
+  height: 200px;
 }
 
 nav {
-    background-color: black;
-    padding: 10px 0;
-    text-align: left;
+  background-color: black;
+  padding: 10px 0;
+  text-align: left;
 }
 
 nav a {
-    color: #d4af37; /* Gold color */
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 15px;
-    padding: 10px 20px;
-    background-color: #000;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+  color: #d4af37; /* Gold color */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 10px 20px;
+  background-color: #000;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
 }
 
 nav a.circular {
-    border-radius: 50%; /* Circular shape when the class is added */
+  border-radius: 50%; /* Circular shape when the class is added */
 }
 
 .button {
-    display: inline-block;
-    background-color: #d4af37; /* Gold color */
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+  display: inline-block;
+  background-color: #d4af37; /* Gold color */
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
 }
 
 .button:hover {
-    background-color: #000;
-    color: #d4af37; /* Gold color */
+  background-color: #000;
+  color: #d4af37; /* Gold color */
 }
 
 .button.circular {
-    border-radius: 50%; /* Circular shape when the class is added */
+  border-radius: 50%; /* Circular shape when the class is added */
 }
+
+.search-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #d4af37; /* Gold color */
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #000;
+  color: #d4af37; /* Gold color */
+}
+
+.filters {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+  
