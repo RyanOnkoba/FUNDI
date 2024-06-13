@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOMEPAGE</title>
   <link rel="icon" href="./LOGO IMAGE">
-  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="./Home.css">
 </head>
 <body>
   <div class="LOGOdiv">
@@ -13,65 +13,91 @@
   </div>
   <nav>
     <a href="./Login.html" class="button">Login</a>
+    <a href="./about-us.html" class="button">About Us</a>
   </nav>
 
   <div class="container">
     <div class="header">Popular projects near you:</div>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search projects...">
+      <button onclick="searchProjects()">Search</button>
+    </div>
+
+    <!-- Filter Options -->
+    <div class="filters">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All Categories</option>
+        <option value="balconies">Balconies</option>
+        <option value="homeCleaning">Home Cleaning</option>
+        <option value="roofRepair">Roof Repair</option>
+        <option value="hedgeMaintenance">Hedge Maintenance</option>
+        <option value="applianceRepair">Appliance Repair</option>
+        <option value="pestControl">Pest Control</option>
+        <option value="gutterServices">Gutter Services</option>
+        <option value="plumbingServices">Plumbing Services</option>
+      </select>
+    </div>
+
+    <!-- Grid of Cards -->
     <div class="grid">
-      <div class="card">
+      <div class="card balconies">
         <h3>Balconies</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxn01omqAJTqIf-OfUMZa8E-sqgFUX6EQScg&s" alt="Decks & Porches">
-        <div class="price">from ksh 25,890</div>
+        <div class="price">from Ksh 25,890</div>
         <div class="description">Enjoy your outdoor space with our balcony maintenance service. We ensure your balcony is safe, clean, and well-maintained for your relaxation and entertainment needs.</div>
       </div>
-      <div class="card">
+      <div class="card homeCleaning">
         <h3>Home Cleaning</h3>
         <img src="https://t3.ftcdn.net/jpg/04/21/55/50/360_F_421555010_VDODYiU9sAvvhxWKYgnEp0YahXoPLSCg.jpg" alt="Home Cleaning">
-        <div class="price">from ksh 3,000</div>
+        <div class="price">from Ksh 3,000</div>
         <div class="description">Let us take the stress out of cleaning with our professional home cleaning service. Our team will leave your home sparkling and fresh, giving you more time to enjoy your space.</div>
       </div>
-      <div class="card">
+      <div class="card roofRepair">
         <h3>Roof Repair</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsCAiFwTcFyFKJqzUht9C8y2REIGKynF08zw&s" alt="Roof Repair">
         <div class="price">from Ksh 20,000</div>
         <div class="description">Protect your home with our expert roof repair service. From leaks to missing shingles, our team will ensure your roof is in top condition, keeping your home safe and secure.</div>
       </div>
-      <div class="card">
+      <div class="card hedgeMaintenance">
         <h3>Hedge Maintenance</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyEBQqUgpqtvXNCpH1rsh8Xc8Aehau6p_L3pYMManPMFf5LCweYIUOavpPSUbLXHv9hmM&usqp=CAU" alt="Fence Repair">
         <div class="price">from Ksh 3,000</div>
         <div class="description">Keep your property looking pristine with our hedge maintenance service. We'll trim, shape, and care for your hedges to enhance your home's curb appeal.</div>
       </div>
-      <div class="card">
+      <div class="card applianceRepair">
         <h3>Appliance Repair</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkQWM9QGAm2oCr5qr7wTRCS3i6TRyJfY5-A&s" alt="Appliance Repair">
         <div class="price">from Ksh 3,000</div>
         <div class="description">Don't let a malfunctioning appliance disrupt your daily routine. Our appliance repair service will quickly diagnose and fix any issues, ensuring your appliances are running smoothly.</div>
       </div>
-      <div class="card">
+      <div class="card pestControl">
         <h3>Pest Control</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkOt8Cvb9oQCXKwpM5YBE6pumzbnk_eBFpA&s" alt="Pest Control">
         <div class="price">from Ksh 5,000</div>
         <div class="description">Say goodbye to unwanted pests with our professional pest control service. We'll effectively eliminate pests from your home, keeping it safe and comfortable for you and your family.</div>
       </div>
-      <div class="card">
+      <div class="card gutterServices">
         <h3>Gutter Services</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKCXWHUVDlniqSd2R1kA8bfBOWUpEYqs7Buw&s" alt="Gutter Services">
         <div class="price">from Ksh 5,000</div>
         <div class="description">Protect your home from water damage with our gutter services. We'll clean, repair, and maintain your gutters to ensure proper drainage and prevent issues like leaks and flooding.</div>
       </div>
-      <div class="card">
+      <div class="card plumbingServices">
         <h3>Plumbing Services</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gqXboahSpyBFc9z0Bi3Rk8DpgH_vdFmPhg&s" alt="Plumbing Services">
         <div class="price">from Ksh 3,000</div>
         <div class="description">From leaky faucets to clogged drains, our plumber service has you covered. Our skilled plumbers will address any plumbing issues efficiently, keeping your home's water systems running smoothly.</div>
       </div>
     </div>
+
     <div class="footer">
       Price shown is the Average median price of minimum job size for FUNDI's pre-priced offering. Actual pricing may vary.
     </div>
   </div>
+
+  <script src="./Home.js"></script>
 </body>
 </html>
-
-
