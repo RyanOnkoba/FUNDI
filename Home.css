@@ -1,66 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
-    text-align: center;
-    padding: 20px;
-    display: block;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #333; /* New background color on hover */
-    color: #fff; /* New text color on hover */
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  .card h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #d4af37; /* Gold color */
-  }
-  
-  .card .price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #d4af37; /* Gold color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  background-color: #333;
+  color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #d4af37;
+}
+
+.card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d4af37;
 }
 
 .card .description {
@@ -75,7 +75,7 @@ body {
 
 .card:hover h3,
 .card:hover .price {
-  color: #fff; /* Ensuring the text in h3 and price also changes color on hover */
+  color: #fff;
 }
 
 .footer {
@@ -88,7 +88,6 @@ body {
 .LOGOdiv {
   background-color: black;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .LOGOdiv img {
@@ -103,7 +102,7 @@ nav {
 }
 
 nav a {
-  color: #d4af37; /* Gold color */
+  color: #d4af37;
   text-decoration: none;
   font-weight: bold;
   margin: 0 15px;
@@ -114,12 +113,12 @@ nav a {
 }
 
 nav a.circular {
-  border-radius: 50%; /* Circular shape when the class is added */
+  border-radius: 50%;
 }
 
 .button {
   display: inline-block;
-  background-color: #d4af37; /* Gold color */
+  background-color: #d4af37;
   color: #000;
   padding: 10px 20px;
   border-radius: 4px;
@@ -129,54 +128,43 @@ nav a.circular {
 
 .button:hover {
   background-color: #000;
-  color: #d4af37; /* Gold color */
+  color: #d4af37;
 }
 
 .button.circular {
-  border-radius: 50%; /* Circular shape when the class is added */
+  border-radius: 50%;
 }
 
-.search-container {
-  margin-bottom: 20px;
-  text-align: center;
+.professionals {
+  margin-top: 20px;
 }
 
-.search-container input[type="text"] {
-  padding: 10px;
-  width: 300px;
-  margin-right: 10px;
+.professional-card {
+  background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.search-container button {
-  padding: 10px 20px;
-  background-color: #d4af37; /* Gold color */
-  color: #000;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
-}
-
-.search-container button:hover {
-  background-color: #000;
-  color: #d4af37; /* Gold color */
-}
-
-.filters {
-  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
   text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.filters label {
-  margin-right: 10px;
+.professional-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.filters select {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.professional-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #d4af37;
 }
 
-  
+.professional-card .description {
+  font-size: 14px;
+  margin-top: 10px;
+}
