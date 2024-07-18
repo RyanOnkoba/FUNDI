@@ -1,76 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  /* Utility classes */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  /* Link styles */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  /* Image styles */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Button styles */
-  button {
-    cursor: pointer;
-  }
-  
-  /* Input styles */
-  input, select {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Basic styling for forms */
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Basic grid layout */
-  .grid {
-    display: grid;
-    gap: 20px;
-  }
-  
-  /* Adding a bit of animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fade-in {
-    animation: fadeIn 0.5s ease-in;
-  }
-  
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

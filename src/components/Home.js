@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../styles/Home.css';
 
 const Home = () => {
+  console.log('Home component loaded');
+
   const [searchInput, setSearchInput] = useState('');
   const [category, setCategory] = useState('all');
 
