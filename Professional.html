@@ -14,8 +14,15 @@
     <button class="card-button" onclick="window.location.href='/Home.html'">HomePage</button>
     <div class="register-div card">
         <h2>Welcome to your Professional Dashboard</h2>
-        <p>Name:</p>
-        <p></p>
+        <p>Name: <span id="userName"></span></p>
+        <p>Email: <span id="userEmail"></span></p>
+        <p>Location: <span id="userLocation"></span></p>
+        <div id="jobListContainer">
+            <h3>Available Jobs</h3>
+            <ul id="jobList">
+                <!-- Jobs will be dynamically inserted here -->
+            </ul>
+        </div>
     </div>
     <script src="login.js"></script>
 </body>

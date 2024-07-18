@@ -20,8 +20,8 @@
             <p>Log in to manage your projects, connect with clients, and track your progress.</p>
             <p>Your tools for success are just a click away.</p>
             <div class="button-container">
-                <button class="card-button" onclick="openModal('fundi')">Log In</button>
-                <button class="card-button" onclick="openSignupModal()">SignUp</button>
+                <button class="card-button" onclick="openModal('fundi', 'login')">Log In</button>
+                <button class="card-button" onclick="openModal('fundi', 'signup')">Sign Up</button>
             </div>
         </div>
       
@@ -30,46 +30,46 @@
             <p>Log in to find skilled professionals, manage your projects, and get the help you need.</p>
             <p>Your next project starts here.</p>
             <div class="button-container">
-                <button class="card-button" onclick="openModal('client')">Log In</button>
-                <button class="card-button" onclick="openSignupModal()">SignUp</button>
+                <button class="card-button" onclick="openModal('client', 'login')">Log In</button>
+                <button class="card-button" onclick="openModal('client', 'signup')">Sign Up</button>
             </div>
         </div>
     </div>
 
     <!-- Modal structure for login -->
-    <div id="loginModal" class="modal">
+    <div id="loginModal" class="modal" style="display:none;">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Log In</h2>
-            <form id="loginForm">
-                <p><label for="email">Email/Phone Number:</label>
-                <input type="email" id="email" name="email" required></p>
-                <p><label for="password">Password:</label>
-                <input type="password" id="password" name="password" required></p>
-                <button type="button" class="card-button" onclick="redirectToProfessional()">Submit</button>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <p><label for="loginEmail">Email/Phone Number:</label>
+                <input type="email" id="loginEmail" name="email" required></p>
+                <p><label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required></p>
+                <button type="submit" class="card-button">Submit</button>
             </form>
         </div>
     </div>
 
     <!-- Modal structure for signup -->
-    <div id="signupModal" class="modal">
+    <div id="signupModal" class="modal" style="display:none;">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Sign Up</h2>
-            <form id="signupForm">
-                <p><label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required></p>
-                <p><label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required></p>
-                <p><label for="location">Location:</label>
-                <input type="text" id="location" name="location" required></p>
-                <p><label for="age">Age:</label>
-                <input type="number" id="age" name="age" required></p>
-                <p><label for="idNumber">ID Number:</label>
-                <input type="text" id="idNumber" name="idNumber" required></p>
-                <p><label for="password">Password:</label>
-                <input type="password" id="password" name="password" required></p>
-                <button type="button" class="card-button" onclick="redirectToProfessional()">Submit</button>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <p><label for="signupEmail">Email Address:</label>
+                <input type="email" id="signupEmail" name="email" required></p>
+                <p><label for="signupFullName">Full Name:</label>
+                <input type="text" id="signupFullName" name="fullName" required></p>
+                <p><label for="signupLocation">Location:</label>
+                <input type="text" id="signupLocation" name="location" required></p>
+                <p><label for="signupAge">Age:</label>
+                <input type="number" id="signupAge" name="age" required></p>
+                <p><label for="signupIdNumber">ID Number:</label>
+                <input type="text" id="signupIdNumber" name="idNumber" required></p>
+                <p><label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="password" required></p>
+                <button type="submit" class="card-button">Submit</button>
             </form>
         </div>
     </div>

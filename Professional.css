@@ -38,3 +38,12 @@ img {
     background-color: white;
     color: #d4af37;
 }
+
+#jobListContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-top: 1px solid black;
+    margin-top: 20px;
+    padding-top: 20px;
+}
